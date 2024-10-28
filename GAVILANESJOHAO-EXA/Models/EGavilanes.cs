@@ -13,7 +13,7 @@ namespace GAVILANESJOHAO_EXAMEN.Models
         public DateTime Fecha { get; set; }
         
         public int cedula { get; set; }
-        
+        [Required]
         public float peso { get; set; }
         public bool NacionalEcuatoriano { get; set; }
 

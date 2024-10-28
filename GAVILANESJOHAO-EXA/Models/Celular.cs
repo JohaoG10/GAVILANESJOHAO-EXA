@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace GAVILANESJOHAO_EXAMEN.Models
 {
@@ -7,7 +8,8 @@ namespace GAVILANESJOHAO_EXAMEN.Models
         [Key]
         public int IdCelular { get; set; }
         [Required]
-        
+        [StringLength(1024)]
+        [DisplayName("Modelo")]
         public string NombreModelo { get; set; }
         [Required]
         public int año { get; set; }
